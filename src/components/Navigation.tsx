@@ -3,15 +3,17 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   const navItems = [
-    { label: "Solutions", href: "#pricing" },
-    { label: "About", href: "#leadership" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "/contact" },
+    { label: "Solutions", to: "/#pricing" },
+    { label: "About", to: "/#leadership" },
+    { label: "FAQ", to: "/#faq" },
+    { label: "Contact", to: "/contact" },
   ];
+
 
   return (
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
@@ -25,23 +27,13 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              item.href.startsWith("#") ? (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {item.label}
-                </a>
-              ) : (
-                <Link
-                  key={item.label}
-                  to={item.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {item.label}
-                </Link>
-              )
+              <Link
+                key={item.label}
+                to={item.to}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {item.label}
+              </Link>
             ))}
             <Button variant="default" size="sm">
               Get Started
