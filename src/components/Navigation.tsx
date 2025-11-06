@@ -8,9 +8,9 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   const navItems = [
-    { label: "About", to: "/#leadership" },
-    { label: "FAQ", to: "/#faq" },
-    { label: "Contact", to: "/contact" },
+    { label: "Apie mus", to: "/#leadership" },
+    { label: "DUK", to: "/#faq" },
+    { label: "Kontaktai", to: "/contact" },
   ];
 
 
@@ -35,7 +35,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Button asChild size="sm" variant="default">
-              <a href ="/#pricing">Solutions</a>
+              <a href ="/#pricing">Sprendimai</a>
             </Button>
           </div>
 

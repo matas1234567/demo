@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    question: "What's included in each solution package?",
-    answer: "Each package includes design, development, testing, and deployment. The One Site Solution is perfect for single-page sites, the Dynamic Solution adds CMS and multi-page functionality, while the Custom Solution is tailored entirely to your specific requirements with unlimited features.",
+    question: "Kas įtraukta į kiekvieną sprendimo paketą?",
+    answer: "Kiekviename pakete yra dizainas, kūrimas, testavimas ir diegimas. Vieno puslapio sprendimas puikiai tinka vieno puslapio svetainėms, Dinaminis sprendimas prideda turinio valdymo sistemą (CMS) ir kelių puslapių funkcionalumą, o Individualus sprendimas yra visiškai pritaikytas pagal jūsų individualius poreikius, su neribotomis galimybėmis.",
   },
   {
-    question: "How long does it take to complete a project?",
-    answer: "Timelines vary by package: One Site Solution typically takes 1-2 weeks, Dynamic Solution takes 3-4 weeks, and Custom Solutions are estimated on a case-by-case basis. We'll provide a detailed timeline during our initial consultation.",
+    question: "Kiek laiko trunka projekto įgyvendinimas?",
+    answer: "Terminai priklauso nuo pasirinkto paketo: Vieno puslapio sprendimas paprastai trunka 1–2 savaites, Dinaminis sprendimas – 3–4 savaites, o Individualus sprendimas vertinamos individualiai. Išsamią projekto trukmę pateiksime pirminės konsultacijos metu.",
   },
   {
-    question: "Do you provide ongoing support and maintenance?",
-    answer: "Yes! All packages include post-launch support. One Site Solution includes 1 month, Dynamic Solution includes 3 months, and Custom Solution includes 12 months of support. Extended support packages are also available.",
+    question: "Ar teikiate nuolatinę priežiūrą ir palaikymą?",
+    answer: "Taip! Visi paketai apima palaikymą po svetainės paleidimo. Vieno puslapio sprendimas suteikia 1 mėnesio palaikymą, Dinaminis sprendimas – 3 mėnesių, o Individualus sprendimas – net 12 mėnesių. Taip pat galima užsisakyti išplėstinius palaikymo paketus.",
   },
   {
-    question: "Can I upgrade my package later?",
-    answer: "Absolutely! We make it easy to upgrade as your business grows. We'll work with you to seamlessly transition to a more advanced solution while preserving your existing content and design.",
+    question: "Ar galiu vėliau atnaujinti savo paketą?",
+    answer: "Žinoma! Augant jūsų verslui, atnaujinti paketą yra paprasta. Mes pasirūpinsime, kad perėjimas prie pažangesnio sprendimo būtų sklandus ir išsaugotų esamą turinį bei dizainą.",
   },
   {
-    question: "What technologies do you use?",
-    answer: "We use modern, industry-standard technologies including React, TypeScript, and Tailwind CSS for frontend development. For backend and CMS needs, we choose the best tools based on your specific requirements.",
+    question: "Kokias technologijas naudojate?",
+    answer: "Naudojame modernias, pramonės standartus atitinkančias technologijas – React, TypeScript ir Tailwind CSS – priekinės dalies (frontend) kūrimui. Galinei daliai (backend) ir turinio valdymo sistemai (CMS) parenkame tinkamiausius įrankius pagal jūsų konkrečius poreikius.",
   },
   {
-    question: "Do you offer hosting services?",
-    answer: "We help you set up hosting on reliable platforms and can manage it for you if needed. Hosting costs are separate from our development fees, and we'll recommend the best option for your budget and requirements.",
+    question: "Ar teikiate hostingo paslaugas?",
+    answer: "Padedame jums įdiegti hostingą patikimose platformose ir, jei reikia, galime jį administruoti už jus. Hostingo kaina yra atskira nuo kūrimo mokesčių – rekomenduosime geriausią variantą pagal jūsų biudžetą ir poreikius.",
   },
 ];
 
@@ -38,10 +38,10 @@ const FAQ = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Frequently asked questions
+            Daznai uzduodami klausimai
           </h2>
           <p className="text-xl text-muted-foreground">
-            Everything you need to know about our services
+            Viskas ka jums reikia zinoti apie musu paslaugas
           </p>
         </div>
 
@@ -64,13 +64,13 @@ const FAQ = () => {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">
-            Still have questions? We're here to help.
+            Turite dar klausimu? Mes galime padeti!
           </p>
           <a
             href="/contact"
             className="text-primary hover:underline font-medium"
           >
-            Contact our team →
+            Susisiekite →
           </a>
         </div>
       </div>

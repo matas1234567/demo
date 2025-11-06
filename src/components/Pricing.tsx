@@ -2,52 +2,55 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
 
+// Ą Č Ę Ė Į Š Ų Ū Ž
+// ą č ę ė į š ų ū ž
+
 const pricingTiers = [
   {
-    name: "One Site Solution",
+    name: "Vieno puslapio sprendimas",
     price: "$499",
-    period: "one-time",
-    description: "Perfect for small businesses and personal projects",
+    period: "vienkartinis",
+    description: "Puikiai tinka mažiems verslams ir asmeniniams projektams.",
     features: [
-      "Single-page website",
-      "Mobile responsive design",
-      "Basic SEO optimization",
-      "Contact form integration",
-      "1 month support",
-      "Free hosting setup",
+      "Vienas statinis puslapis",
+      "Dizainas atitinkantis mobiliuosius parametrus",
+      "Paprasta SEO optimizacija",
+      "Kontaktų formos integracija",
+      "1 mėnesio pagalba",
+      "Nemokama hostingo konfigūracija",
     ],
     popular: false,
   },
   {
-    name: "Dynamic Solution",
+    name: "Dynaminis sprendimas",
     price: "$1,499",
-    period: "one-time",
-    description: "Ideal for growing businesses needing more flexibility",
+    period: "vienkartinis",
+    description: "Puikiai tinka augantiems verslams, reikalaujantiems lankstumo",
     features: [
-      "Multi-page website",
-      "Custom CMS integration",
-      "Advanced SEO & analytics",
-      "Blog functionality",
-      "3 months support",
-      "Performance optimization",
-      "Social media integration",
+      "2 arba daugiau puslapių ",
+      "Individuali CMS integracija",
+      "Isplestine SEO & analitika",
+      "Blog funkcija",
+      "3 menesiu pagalba",
+      "Svetaines greicio optimizacija",
+      "Socialiniu mediju integracija",
     ],
     popular: true,
   },
   {
-    name: "Custom Solution",
-    price: "Custom",
+    name: "Individualus sprendimas",
+    price: "Nenustatyta",
     period: "quote",
-    description: "Enterprise-grade solutions tailored to your needs",
+    description: "Sprendimas pritaikytas jusu poreikiams",
     features: [
-      "Unlimited pages",
-      "Custom web application",
-      "API integrations",
-      "Advanced features",
-      "12 months support",
-      "Dedicated account manager",
-      "Priority support",
-      "Regular updates",
+      "Puslapiai be limitu",
+      "Individuali web aplikacija",
+      "API integracijos",
+      "Pažangios funkcijos",
+      "12 menesiu pagalba",
+      "Dedikuotas puslapio vadovas",
+      "Pimernybe pagalbai",
+      "Reguliarus atnaujinimai",
     ],
     popular: false,
   },
@@ -61,10 +64,10 @@ const Pricing = () => {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Simple, transparent pricing
+            Musu tiekiami pasiulymai:
           </h2>
           <p className="text-xl text-muted-foreground">
-            Choose the perfect solution for your business needs
+            Pasirinkite paketa kuris geriausiai atitinka jusu reikalavimus
           </p>
         </div>
 
@@ -116,7 +119,7 @@ const Pricing = () => {
                   className="w-full"
                   size="lg"
                 >
-                  {tier.period === "quote" ? "Contact Sales" : "Get Started"}
+                  {tier.period === "quote" ? "Susisiekti" : "Pirmyn"}
                 </Button>
               </CardFooter>
             </Card>

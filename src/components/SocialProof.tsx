@@ -3,30 +3,49 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO, TechStart",
-    content: "Hobbin transformed our online presence completely. The dynamic solution was exactly what we needed to scale our business.",
+    name: "Kastytis Raulinaitis",
+    role: "Pardavimų direktorius, Rekvizitai.lt", //Bendrakūrėjas
+    content: "Hobbin puikiai tvarkesi su reklama, pelningas bendradarbiavimas.",
     rating: 5,
   },
   {
-    name: "Michael Chen",
-    role: "Founder, Creative Studio",
-    content: "The attention to detail and support throughout the project was exceptional. Highly recommend their services.",
+    name: "Andrius Janušaitis",
+    role: "Įkūrėjas, AJ Movers",
+    content: "Malonus bendradarbiavimas, sklandžiai ir atsakingai tvarkomi reikalai Jungtinėje Karalystėje.",
     rating: 5,
   },
   {
-    name: "Emily Rodriguez",
+    name: "Ruta Suchokaite",
     role: "Marketing Director, GrowthCo",
     content: "Professional, efficient, and delivered beyond expectations. The custom solution has been a game-changer for our team.",
     rating: 5,
   },
+  {
+    name: "Matas Ulskis",
+    role: "CEO/Founder, Jurosgerybiunamai.lt",
+    content: "Puiki elektronine parduotuve, puikios reklamos paslaugos",
+    rating: 5,
+  },
+  {
+    name: "Gaidys",
+    role: "Parsidavelis",
+    content: "Isdaviau saikele bet gera weba pakure tikrai",
+    rating: 1,
+  },
+  {
+    name: "anonymous",
+    role: "CEO, UAB Ned.lt",
+    content: "puikus B2B bendradarbiavimas",
+    rating: 5,
+  }
 ];
-
+// Ą Č Ę Ė Į Š Ų Ū Ž
+// ą č ę ė į š ų ū ž
 const stats = [
-  { value: "500+", label: "Projects Delivered" },
-  { value: "98%", label: "Client Satisfaction" },
-  { value: "24/7", label: "Support Available" },
-  { value: "50+", label: "Team Members" },
+  { value: "50+", label: "Surasta sprendimų" },
+  { value: "93%", label: "Patenkinti klientai" },
+  { value: "24/7", label: "Galima pagalba" },
+  { value: "10+", label: "Komandos narių" },
 ];
 
 const SocialProof = () => {
@@ -48,10 +67,10 @@ const SocialProof = () => {
         {/* Testimonials */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Trusted by businesses worldwide
+            Dalyvauja ir įmonės iš kitų pasaulio šalių 
           </h2>
           <p className="text-xl text-muted-foreground">
-            See what our clients have to say about working with us
+            Pamatykite, ką klientai sako po darbo su mumis
           </p>
         </div>
 

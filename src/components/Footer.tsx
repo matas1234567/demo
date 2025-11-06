@@ -6,21 +6,17 @@ const Footer = () => {
 
   const footerLinks = {
     Solutions: [
-      { label: "One Site Solution", href: "#pricing" },
-      { label: "Dynamic Solution", href: "#pricing" },
-      { label: "Custom Solution", href: "#pricing" },
+      { label: "One Site Solution", href: "/#pricing" },
+      { label: "Dynamic Solution", href: "/#pricing" },
+      { label: "Custom Solution", href: "/#pricing" },
     ],
     Company: [
       { label: "About", href: "#leadership" },
       { label: "Careers", href: "#" },
-      { label: "Blog", href: "#" },
-      { label: "Press", href: "#" },
     ],
     Resources: [
       { label: "FAQ", href: "#faq" },
       { label: "Support", href: "#" },
-      { label: "Documentation", href: "#" },
-      { label: "Case Studies", href: "#" },
     ],
     Legal: [
       { label: "Privacy Policy", href: "#" },
@@ -30,10 +26,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Facebook, href: "https://www.instagram.com/arnaslink/", label: "Facebook" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/matas-michailinas-48ba9b2a1/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/arnaslink/", label: "Instagram" },
   ];
 
   return (

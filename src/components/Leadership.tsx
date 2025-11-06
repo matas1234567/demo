@@ -3,30 +3,30 @@ import { Linkedin, Mail } from "lucide-react";
 
 const team = [
   {
-    name: "Alex Thompson",
-    role: "Founder & CEO",
-    bio: "15+ years in web development, passionate about creating innovative digital solutions.",
-    linkedin: "#",
-    email: "alex@hobbin.com",
+    name: "Arnas Linkevicius",
+    role: "Ikurejas ir generalinis direktorius",
+    bio: "nebaige mokyklos, stato bizni, zino kaip veikia gyvenimas is tikruju",
+    linkedin: "https://www.instagram.com/arnaslink/",
+    email: "arnaslinkevicius@gmail.com",
   },
   {
-    name: "Jordan Lee",
-    role: "Head of Design",
-    bio: "Award-winning designer specializing in user experience and brand identity.",
-    linkedin: "#",
-    email: "jordan@hobbin.com",
+    name: "Matas Michailinas",
+    role: "Technologiju vadovas",
+    bio: "Programuotojas, taip pat specializuojasi finansu sferoje",
+    linkedin: "https://www.linkedin.com/in/matas-michailinas-48ba9b2a1/",
+    email: "michailinasmatas@gmail.com",
   },
   {
-    name: "Sam Rivera",
-    role: "Technical Director",
-    bio: "Full-stack expert with a focus on scalable architecture and performance.",
+    name: "Benas Rupsys",
+    role: "Pardavimu Vadovas",
+    bio: "Finansu profesionalas",
     linkedin: "#",
-    email: "sam@hobbin.com",
+    email: "brupsys@gmail.com",
   },
   {
-    name: "Morgan Chen",
-    role: "Client Success Lead",
-    bio: "Dedicated to ensuring every client achieves their digital goals.",
+    name: "Hubertas Banys",
+    role: "Informacijos vadovas",
+    bio: "Atsidaves naujausioms naujienoms, blogo rasytojas.",
     linkedin: "#",
     email: "morgan@hobbin.com",
   },
@@ -38,10 +38,10 @@ const Leadership = () => {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Meet our leadership team
+            Susipazinkite su musu komanda
           </h2>
           <p className="text-xl text-muted-foreground">
-            Experienced professionals dedicated to your success
+            Patyre profesionalai atsidave jusu kompanijos augimui
           </p>
         </div>
 
