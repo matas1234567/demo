@@ -55,7 +55,9 @@ const pricingTiers = [
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <>
+      <div id="solutions" className="h-0" />
+      <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
@@ -122,7 +124,10 @@ const Pricing = () => {
         </div>
       </div>
     </section>
-  );
+
+
+    </>
+      );
 };
 
 export default Pricing;
