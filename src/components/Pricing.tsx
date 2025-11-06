@@ -118,6 +118,9 @@ const pricingTiers = [
 
   },
 ];
+const pageTiers = pricingTiers.slice(0, 3);
+const marketingSolutions = pricingTiers.slice(3);
+
 
 const Pricing = () => {
   return (
@@ -130,12 +133,12 @@ const Pricing = () => {
             Mūsų teikiami pasiūlymai:
           </h2>
           <p className="text-xl text-muted-foreground">
-            Pasirinkite paketą, kuris geriausiai atitinka jūsų reikalavimus
+            Pasirinkite paketą, kuris geriausiai atitinka jūsų rinkodaros tikslus
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {pricingTiers.map((tier) => (
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+          {marketingSolutions.map((tier) => (
             <Card
               key={tier.name}
               className={`relative flex flex-col ${
@@ -189,6 +192,66 @@ const Pricing = () => {
             </Card>
           ))}
         </div>
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <p className="text-xl text-muted-foreground">
+            Pasirinkite svetainės sprendimą, kuris geriausiai atitinka jūsų lūkesčius
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {pageTiers.map((tier) => (
+            <Card
+              key={tier.name}
+              className={`relative flex flex-col ${
+                tier.popular
+                  ? "border-primary shadow-medium scale-105"
+                  : "border-border shadow-soft"
+              }`}
+            >
+              {tier.popular && (
+                <div className="absolute -top-4 left-0 right-0 flex justify-center">
+                  <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
+                    Most Popular
+                  </span>
+                </div>
+              )}
+              
+              <CardHeader className="space-y-4">
+                <CardTitle className="text-2xl">{tier.name}</CardTitle>
+                <CardDescription>{tier.description}</CardDescription>
+                <div className="pt-4">
+                  <span className="text-4xl font-bold">{tier.price}</span>
+                  {tier.period !== "quote" && (
+                    <span className="text-muted-foreground ml-2">
+                      / {tier.period}
+                    </span>
+                  )}
+                </div>
+              </CardHeader>
+
+              <CardContent className="flex-grow">
+                <ul className="space-y-3">
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                      <span className="text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+
+              <CardFooter>
+                <Button
+                  asChild
+                  variant={tier.popular ? "default" : "outline"}
+                  className="w-full"
+                  size="lg"
+                >
+                  <Link to={tier.ctaHref}>{tier.ctaLabel}</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div> 
       </div>
     </section>
 
