@@ -39,19 +39,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "hello@hobbin.com",
-      href: "mailto:hello@hobbin.com",
+      content: "michailinasmatas@gmail.com",
+      href: "mailto:michailinasmatas@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      content: "+31 6 17334492",
+      href: "tel:+31617334492",
     },
     {
       icon: MapPin,
       title: "Office",
-      content: "123 Web Street, Digital City, DC 12345",
+      content: "Robijnstraat 3, Groningen, KN 97435",
       href: "#",
     },
   ];
