@@ -8,7 +8,6 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   const navItems = [
-    { label: "Solutions", to: "/#pricing" },
     { label: "About", to: "/#leadership" },
     { label: "FAQ", to: "/#faq" },
     { label: "Contact", to: "/contact" },
@@ -35,8 +34,8 @@ const Navigation = () => {
                 {item.label}
               </Link>
             ))}
-            <Button variant="default" size="sm">
-              Get Started
+            <Button asChild size="sm" variant="default">
+              <a href ="/#pricing">Solutions</a>
             </Button>
           </div>
 
