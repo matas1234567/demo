@@ -73,8 +73,10 @@ const Navigation = () => {
                 </Link>
               )
             ))}
-            <Button variant="default" size="sm" className="w-full">
-              Get Started
+            <Button asChild variant="default" size="sm" className="w-full">
+              <a href="/#pricing" onClick={() => setIsOpen(false)}>
+                Solutions
+              </a>
             </Button>
           </div>
         )}
