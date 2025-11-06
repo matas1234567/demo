@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
@@ -8,7 +9,7 @@ import { Check } from "lucide-react";
 const pricingTiers = [
   {
     name: "Vieno puslapio sprendimas",
-    price: "$499",
+    price: "499 €",
     period: "vienkartinis",
     description: "Puikiai tinka mažiems verslams ir asmeniniams projektams.",
     features: [
@@ -20,39 +21,101 @@ const pricingTiers = [
       "Nemokama hostingo konfigūracija",
     ],
     popular: false,
+    ctaLabel: "Pirmyn",
+    ctaHref: "/contact"
+
   },
   {
-    name: "Dynaminis sprendimas",
-    price: "$1,499",
+    name: "Dinaminis sprendimas",
+    price: "1,499 €",
     period: "vienkartinis",
     description: "Puikiai tinka augantiems verslams, reikalaujantiems lankstumo",
     features: [
       "2 arba daugiau puslapių ",
       "Individuali CMS integracija",
-      "Isplestine SEO & analitika",
+      "Išplėstinė SEO & analitika",
       "Blog funkcija",
-      "3 menesiu pagalba",
-      "Svetaines greicio optimizacija",
-      "Socialiniu mediju integracija",
+      "3 mėnesių pagalba",
+      "Svetainės greičio optimizacija",
+      "Socialinių medijų integracija",
     ],
     popular: true,
+    ctaLabel: "Pirmyn",
+    ctaHref: "/contact"
+
   },
   {
     name: "Individualus sprendimas",
     price: "Nenustatyta",
     period: "quote",
-    description: "Sprendimas pritaikytas jusu poreikiams",
+    description: "Sprendimas pritaikytas jūsų poreikiams",
     features: [
-      "Puslapiai be limitu",
+      "Puslapiai be limitų",
       "Individuali web aplikacija",
       "API integracijos",
       "Pažangios funkcijos",
-      "12 menesiu pagalba",
+      "12 menesių pagalba",
       "Dedikuotas puslapio vadovas",
-      "Pimernybe pagalbai",
-      "Reguliarus atnaujinimai",
+      "Pimernybė pagalbai",
+      "Reguliarūs atnaujinimai",
     ],
     popular: false,
+    ctaLabel: "Susisiekti",
+    ctaHref: "/contact"
+
+  },
+  {
+    name: "Marketingo planas",
+    price: "499-1499 €",
+    period: "3-6men",
+    description: "Prestizinis planas",
+    features: [
+      "Vienas statinis puslapis",
+      "Dizainas atitinkantis mobiliuosius parametrus",
+      "Paprasta SEO optimizacija",
+      "Kontaktų formos integracija",
+      "1 mėnesio pagalba",
+      "Nemokama hostingo konfigūracija",
+    ],
+    popular: false,
+    ctaLabel: "Pirmyn",
+    ctaHref: "/contact"
+  },
+  {
+    name: "Marketingo planas",
+    price: "499-1499 €",
+    period: "3-6men",
+    description: "Prestizinis planas",
+    features: [
+      "Vienas statinis puslapis",
+      "Dizainas atitinkantis mobiliuosius parametrus",
+      "Paprasta SEO optimizacija",
+      "Kontaktų formos integracija",
+      "1 mėnesio pagalba",
+      "Nemokama hostingo konfigūracija",
+    ],
+    popular: true,
+    ctaLabel: "Pirmyn",
+    ctaHref: "/contact"
+
+  },
+  {
+    name: "Marketingo planas",
+    price: "499-1499 €",
+    period: "3-6men",
+    description: "Prestizinis planas",
+    features: [
+      "Vienas statinis puslapis",
+      "Dizainas atitinkantis mobiliuosius parametrus",
+      "Paprasta SEO optimizacija",
+      "Kontaktų formos integracija",
+      "1 mėnesio pagalba",
+      "Nemokama hostingo konfigūracija",
+    ],
+    popular: false,
+    ctaLabel: "Pirmyn",
+    ctaHref: "/contact"
+
   },
 ];
 
@@ -64,10 +127,10 @@ const Pricing = () => {
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Musu tiekiami pasiulymai:
+            Mūsų teikiami pasiūlymai:
           </h2>
           <p className="text-xl text-muted-foreground">
-            Pasirinkite paketa kuris geriausiai atitinka jusu reikalavimus
+            Pasirinkite paketą, kuris geriausiai atitinka jūsų reikalavimus
           </p>
         </div>
 
@@ -115,11 +178,12 @@ const Pricing = () => {
 
               <CardFooter>
                 <Button
+                  asChild
                   variant={tier.popular ? "default" : "outline"}
                   className="w-full"
                   size="lg"
                 >
-                  {tier.period === "quote" ? "Susisiekti" : "Pirmyn"}
+                  <Link to={tier.ctaHref}>{tier.ctaLabel}</Link>
                 </Button>
               </CardFooter>
             </Card>
