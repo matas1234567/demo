@@ -5,6 +5,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+// Ą Č Ę Ė Į Š Ų Ū Ž
+// ą č ę ė į š ų ū ž
+
 const faqs = [
   {
     question: "Kas įtraukta į kiekvieną sprendimo paketą?",
@@ -38,10 +41,10 @@ const FAQ = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Daznai uzduodami klausimai
+            Dažnai užduodami klausimai
           </h2>
           <p className="text-xl text-muted-foreground">
-            Viskas ka jums reikia zinoti apie musu paslaugas
+            Viskas, ką jums reikia žinoti apie mūsų paslaugas
           </p>
         </div>
 
@@ -64,7 +67,7 @@ const FAQ = () => {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">
-            Turite dar klausimu? Mes galime padeti!
+            Turite dar klausimų? Mes galime padeti!
           </p>
           <a
             href="/contact"

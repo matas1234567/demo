@@ -23,28 +23,28 @@ const Newsletter = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="bg-card rounded-2xl shadow-medium p-8 sm:p-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Stay updated with Hobbin
+            Bukite atsinaujine su Hobbin
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Get the latest company news, product updates, and industry insights delivered straight to your inbox.
+            Gaukite anksciausias kompanijos nauejinas, pasiulymus ir t.t.
           </p>
 
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <Input
               type="email"
-              placeholder="Enter your email"
+              placeholder="Pasto adresas"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
               className="flex-grow"
             />
             <Button type="submit" size="lg">
-              Subscribe
+              Prenumeruoti
             </Button>
           </form>
 
           <p className="text-sm text-muted-foreground mt-4">
-            We respect your privacy. Unsubscribe at any time.
+            Mes gerbiame privatuma, atsaukti prenumeracija galite bet kada.
           </p>
         </div>
       </div>
