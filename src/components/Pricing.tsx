@@ -22,7 +22,7 @@ const pricingTiers = [
     ],
     popular: false,
     ctaLabel: "Pirmyn",
-    ctaHref: "/contact"
+    ctaHref: "/solutions/one-page"
 
   },
   {
