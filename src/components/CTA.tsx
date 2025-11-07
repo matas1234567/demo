@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -19,19 +20,30 @@ const CTA = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
+              asChild
               size="lg"
               variant="secondary"
               className="bg-white text-primary hover:bg-white/90 group"
             >
-              Pradėkite savo projektą
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <Link to="/project">
+                Pradėkite savo projekta
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
+
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="bg-transparent text-white border-white hover:bg-white/10"
             >
-              Konsultacija
+              <a
+                href="https://calendly.com/mmichailinas/30min"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Konsultacija
+              </a>
             </Button>
           </div>
         </div>
