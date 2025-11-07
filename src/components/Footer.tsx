@@ -6,9 +6,9 @@ const Footer = () => {
 
   const footerLinks = {
     Pasiulymai: [
-      { label: "Vieno puslapio sprendimas", href: "/#pricing" },
-      { label: "Dinaminis sprendimas", href: "/#pricing" },
-      { label: "Individualus sprendimas", href: "/#pricing" },
+      { label: "Vieno puslapio sprendimas", href: "/solutions/one-page" },
+      { label: "Dinaminis sprendimas", href: "/solutions/dynamic-page" },
+      { label: "Individualus sprendimas", href: "/solutions/individual" },
     ],
     Kompanija: [
       { label: "Apie mus", href: "#leadership" },
