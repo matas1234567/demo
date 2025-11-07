@@ -20,8 +20,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
+      title: "Issiusta!",
+      description: "Susisieksime per 24 valandas",
     });
     setFormData({ name: "", email: "", company: "", message: "" });
   };
@@ -38,20 +38,20 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: "Email",
-      content: "michailinasmatas@gmail.com",
-      href: "mailto:michailinasmatas@gmail.com",
+      title: "Pastas",
+      content: "support@hobbin.com",
+      href: "mailto:support@hobbin.com",
     },
     {
       icon: Phone,
-      title: "Phone",
+      title: "Telefonas",
       content: "+31 6 17334492",
       href: "tel:+31617334492",
     },
     {
       icon: MapPin,
-      title: "Office",
-      content: "Robijnstraat 3, Groningen, KN 97435",
+      title: "Ofisas",
+      content: "Akropolis, Vilnius",
       href: "#",
     },
   ];
@@ -64,10 +64,10 @@ const Contact = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-              Get in touch
+              Bendradarbiaukime!
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              Turi projekta galvoje? Mes tave mielai isklausysime. Uzrasyk, o mes susisieksime kaip tik imanoma greiciau
             </p>
           </div>
 
@@ -97,9 +97,9 @@ const Contact = () => {
 
           <Card className="shadow-medium border-border max-w-3xl mx-auto">
             <CardHeader>
-              <CardTitle className="text-2xl">Send us a message</CardTitle>
+              <CardTitle className="text-2xl">Parasyk mums</CardTitle>
               <CardDescription>
-                Fill out the form below and we'll get back to you within 24 hours.
+                Uzpildyk forma ir susisieksime per 24h.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -107,7 +107,7 @@ const Contact = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
-                      Name *
+                      Vardas *
                     </label>
                     <Input
                       id="name"
@@ -115,12 +115,12 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      placeholder="John Doe"
+                      placeholder="Vardenis Pavardenis"
                     />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
-                      Email *
+                      Pastas *
                     </label>
                     <Input
                       id="email"
@@ -129,27 +129,27 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      placeholder="john@example.com"
+                      placeholder="vardenis@gmail.com"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="company" className="text-sm font-medium">
-                    Company
+                    Kompanija
                   </label>
                   <Input
                     id="company"
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    placeholder="Your company name"
+                    placeholder="Jusu kompanijos pavadinimas"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
-                    Message *
+                    Zinute *
                   </label>
                   <Textarea
                     id="message"
@@ -157,13 +157,13 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    placeholder="Tell us about your project..."
+                    placeholder="Papasakokite apie projekta..."
                     rows={6}
                   />
                 </div>
 
                 <Button type="submit" size="lg" className="w-full">
-                  Send Message
+                  Siusti zinute
                 </Button>
               </form>
             </CardContent>

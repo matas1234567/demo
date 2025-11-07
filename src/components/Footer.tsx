@@ -5,23 +5,23 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    Solutions: [
-      { label: "One Site Solution", href: "/#pricing" },
-      { label: "Dynamic Solution", href: "/#pricing" },
-      { label: "Custom Solution", href: "/#pricing" },
+    Pasiulymai: [
+      { label: "Vieno puslapio sprendimas", href: "/#pricing" },
+      { label: "Dinaminis sprendimas", href: "/#pricing" },
+      { label: "Individualus sprendimas", href: "/#pricing" },
     ],
-    Company: [
-      { label: "About", href: "#leadership" },
-      { label: "Careers", href: "#" },
+    Kompanija: [
+      { label: "Apie mus", href: "#leadership" },
+      { label: "Karjeros", href: "#" },
     ],
-    Resources: [
-      { label: "FAQ", href: "#faq" },
-      { label: "Support", href: "#" },
+    Resursai: [
+      { label: "DUK", href: "#faq" },
+      { label: "Pagalba", href: "#" },
     ],
-    Legal: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
-      { label: "Cookie Policy", href: "#" },
+    Teises: [
+      { label: "Privatumo politika", href: "#" },
+      { label: "Paslaugu salygos? //Terms of service", href: "#" },
+      { label: "Slapuku politika", href: "#" },
     ],
   };
 
@@ -41,7 +41,7 @@ const Footer = () => {
               Hobbin
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
-              Creating exceptional web experiences for businesses worldwide.
+              Kuriame neitiketikas patirtis su verslais is visu pasaulio krastu
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => {
@@ -82,11 +82,11 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Hobbin. All rights reserved.
+            © {currentYear} Hobbin. Visos teises rezervuotos.
           </p>
           <div className="flex gap-6 text-sm">
             <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
-              Contact Us
+              Susisiek su mumis
             </Link>
           </div>
         </div>

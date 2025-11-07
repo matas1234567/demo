@@ -11,8 +11,8 @@ const Newsletter = () => {
     e.preventDefault();
     if (email) {
       toast({
-        title: "Success!",
-        description: "You've been subscribed to our newsletter.",
+        title: "Valio!",
+        description: "Tu uzsiprenumeravai musu naujienlaiskiui.",
       });
       setEmail("");
     }
