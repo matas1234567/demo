@@ -41,7 +41,7 @@ const pricingTiers = [
     ],
     popular: true,
     ctaLabel: "Pirmyn",
-    ctaHref: "/contact"
+    ctaHref: "/solutions/dynamic-page"
 
   },
   {
@@ -61,7 +61,7 @@ const pricingTiers = [
     ],
     popular: false,
     ctaLabel: "Susisiekti",
-    ctaHref: "/contact"
+    ctaHref: "/solutions/individual"
 
   },
   {
