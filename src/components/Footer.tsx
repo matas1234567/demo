@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    Pasiulymai: [
+    Pasiūlymai: [
       { label: "Vieno puslapio sprendimas", href: "/solutions/one-page" },
       { label: "Dinaminis sprendimas", href: "/solutions/dynamic-page" },
       { label: "Individualus sprendimas", href: "/solutions/individual" },
@@ -19,7 +19,7 @@ const Footer = () => {
       { label: "DUK", href: "/#faq" },
       { label: "Pagalba", href: "/contact" },
     ],
-    Teises: [
+    Teisės: [
       { label: "Privatumo politika", href: "/legal/privacy-policy" },
       { label: "Naudojimo salygos", href: "/legal/terms-of-service" },
       { label: "Slapukų politika", href: "/legal/cookie-policy" },
@@ -48,7 +48,9 @@ const Footer = () => {
               Hobbin
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
-              Kuriame unikalias skaitmenines patirtis verslams, kurie vertina kokybę ir aiškius rezultatus. Kiekvienas projektas — individualus sprendimas, gimstantis iš supratimo, ko reikia jūsų prekės ženklui.
+              Kuriame skaitmenines patirtis verslams, kurie vertina kokybę ir aiškius rezultatus. <br />
+              <br />
+              Kiekvienas projektas — individualus sprendimas, gimstantis iš supratimo apie jūsų prekės ženklą.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => {
@@ -89,7 +91,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Hobbin. Visos teises rezervuotos.
+            © {currentYear} Hobbin. Visos teisės rezervuotos.
           </p>
           <div className="flex gap-6 text-sm">
             <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
