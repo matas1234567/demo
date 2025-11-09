@@ -37,28 +37,62 @@ const StartProject = () => {
       [name]: value,
     }));
   };
+    
+  const FORM_ENDPOINT = "https://formspree.io/f/mwpaerql";
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // later: send to backend / form API
-    toast({
-      title: "Projekto užklausa išsiųsta",
-      description: "Netrukus su jumis susisieksime dėl detalesnio pasiūlymo.",
-    });
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          formType: "project",
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          website: formData.website,
+          projectType: formData.projectType,
+          budget: formData.budget,
+          timeline: formData.timeline,
+          goals: formData.goals,
+          details: formData.details,
+        }),
+      });
 
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      website: "",
-      projectType: "",
-      budget: "",
-      timeline: "",
-      goals: "",
-      details: "",
-    });
+      if (!res.ok) throw new Error("Submission failed");
+
+      toast({
+        title: "Projekto užklausa išsiųsta",
+        description: "Peržiūrėsime informaciją ir atsiųsime pasiūlymą.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        website: "",
+        projectType: "",
+        budget: "",
+        timeline: "",
+        goals: "",
+        details: "",
+      });
+    } catch (err) {
+      console.error(err);
+      toast({
+        title: "Klaida",
+        description: "Nepavyko išsiųsti. Bandykite dar kartą vėliau.",
+        variant: "destructive",
+      });
+    }
   };
+
+
 
   return (
     <div className="min-h-screen flex flex-col">

@@ -17,14 +17,52 @@ const Contact = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  
+  
+  const FORM_ENDPOINT = "https://formspree.io/f/mwpaerql";
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Issiusta!",
-      description: "Susisieksime per 24 valandas",
-    });
-    setFormData({ name: "", email: "", company: "", message: "" });
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          formType: "contact",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      if (!res.ok) throw new Error("Submission failed");
+
+      toast({
+        title: "Žinutė išsiųsta",
+        description: "Ačiū, netrukus su jumis susisieksime.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (err) {
+      console.error(err);
+      toast({
+        title: "Klaida",
+        description: "Nepavyko išsiųsti. Bandykite dar kartą vėliau.",
+        variant: "destructive",
+      });
+    }
   };
+
+
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

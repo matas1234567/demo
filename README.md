@@ -14,7 +14,8 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
+- Calendly.com // for managing the booking of calls
+- Freeforms.com // for the receival of forms in contact and project pages
 
 ## How can deploy the site?
 
