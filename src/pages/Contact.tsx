@@ -39,7 +39,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Pastas",
-      content: "support@hobbin.com",
+      content: "support@hobbin.lt",
       href: "mailto:support@hobbin.com",
     },
     {

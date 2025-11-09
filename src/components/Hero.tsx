@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-              Prekės ženklo plėtra
+              Prekės ženklo plėtra 
             </span>
             <br />
             <span className="text-foreground">pritaikyta pagal jus</span>

@@ -9,21 +9,25 @@ const Footer = () => {
       { label: "Vieno puslapio sprendimas", href: "/solutions/one-page" },
       { label: "Dinaminis sprendimas", href: "/solutions/dynamic-page" },
       { label: "Individualus sprendimas", href: "/solutions/individual" },
+      { label: "Marketingo pasiulymas", href: "/#pricing"},
     ],
     Kompanija: [
-      { label: "Apie mus", href: "#leadership" },
-      { label: "Karjeros", href: "#" },
+      { label: "Apie mus", href: "/#leadership" },
+      { label: "Karjeros", href: "/#leadership" },
     ],
     Resursai: [
-      { label: "DUK", href: "#faq" },
-      { label: "Pagalba", href: "#" },
+      { label: "DUK", href: "/#faq" },
+      { label: "Pagalba", href: "/contact" },
     ],
     Teises: [
-      { label: "Privatumo politika", href: "#" },
-      { label: "Paslaugu salygos? //Terms of service", href: "#" },
-      { label: "Slapuku politika", href: "#" },
+      { label: "Privatumo politika", href: "/legal/privacy-policy" },
+      { label: "Naudojimo salygos", href: "/legal/terms-of-service" },
+      { label: "Slapuku politika", href: "/legal/cookie-policy" },
     ],
   };
+  
+
+  // privatumo politika, terms of service, slapuku politika to be done.
 
   const socialLinks = [
     { icon: Facebook, href: "https://www.instagram.com/arnaslink/", label: "Facebook" },

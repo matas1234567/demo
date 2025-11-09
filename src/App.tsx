@@ -9,6 +9,9 @@ import StartProject from "./pages/StartProject";
 import SimplePageSolution from "./pages/SimplePageSolution";
 import DynamicSolution from "./pages/DynamicSolution";
 import IndividualSolution from "./pages/IndividualSolution";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +29,9 @@ const App = () => (
           <Route path="/solutions/one-page" element={<SimplePageSolution />} />
           <Route path="/solutions/dynamic-page" element={<DynamicSolution />} />
           <Route path="/solutions/individual" element={<IndividualSolution />} />
+          <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/legal/terms-of-service" element={<TermsOfService />} />
+          <Route path="/legal/cookie-policy" element={<CookiePolicy />} />
           <Route path="/project" element={<StartProject />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
