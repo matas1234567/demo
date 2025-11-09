@@ -22,18 +22,21 @@ const Footer = () => {
     Teises: [
       { label: "Privatumo politika", href: "/legal/privacy-policy" },
       { label: "Naudojimo salygos", href: "/legal/terms-of-service" },
-      { label: "Slapuku politika", href: "/legal/cookie-policy" },
+      { label: "Slapukų politika", href: "/legal/cookie-policy" },
     ],
   };
   
 
-  // privatumo politika, terms of service, slapuku politika to be done.
 
   const socialLinks = [
     { icon: Facebook, href: "https://www.instagram.com/arnaslink/", label: "Facebook" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/matas-michailinas-48ba9b2a1/", label: "LinkedIn" },
     { icon: Instagram, href: "https://www.instagram.com/arnaslink/", label: "Instagram" },
   ];
+
+// Ą Č Ę Ė Į Š Ų Ū Ž
+// ą č ę ė į š ų ū ž
+
 
   return (
     <footer className="bg-card border-t border-border">
@@ -45,7 +48,7 @@ const Footer = () => {
               Hobbin
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
-              Kuriame neitiketikas patirtis su verslais is visu pasaulio krastu
+              Kuriame unikalias skaitmenines patirtis verslams, kurie vertina kokybę ir aiškius rezultatus. Kiekvienas projektas — individualus sprendimas, gimstantis iš supratimo, ko reikia jūsų prekės ženklui.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => {

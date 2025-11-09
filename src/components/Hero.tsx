@@ -15,7 +15,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Transformuokite savo skaitmeninę įtaką su pritaikytais sprendimais: Puslapio Sprendimas | Marketingo Paslaugos.
+            Padedame jūsų verslui augti skaitmeniniame pasaulyje — be perteklinių žodžių.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
