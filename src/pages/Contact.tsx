@@ -76,7 +76,7 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: "Pastas",
+      title: "Paštas",
       content: "support@hobbin.lt",
       href: "mailto:support@hobbin.com",
     },
@@ -94,6 +94,9 @@ const Contact = () => {
     },
   ];
 
+// Ą Č Ę Ė Į Š Ų Ū Ž
+// ą č ę ė į š ų ū ž
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
@@ -105,7 +108,7 @@ const Contact = () => {
               Bendradarbiaukime!
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Turi projekta galvoje? Mes tave mielai isklausysime. Uzrasyk, o mes susisieksime kaip tik imanoma greiciau
+              Turi projektą galvoje? Mes tave mielai išklausysime. Užrašyk, o mes susisieksime kaip tik įmanoma greičiau
             </p>
           </div>
 
@@ -137,7 +140,7 @@ const Contact = () => {
             <CardHeader>
               <CardTitle className="text-2xl">Parasyk mums</CardTitle>
               <CardDescription>
-                Uzpildyk forma ir susisieksime per 24h.
+                Užpildyk formą ir susisieksime per 24h
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -158,7 +161,7 @@ const Contact = () => {
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
-                      Pastas *
+                      Paštas *
                     </label>
                     <Input
                       id="email"
@@ -181,13 +184,13 @@ const Contact = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    placeholder="Jusu kompanijos pavadinimas"
+                    placeholder="Jūsų kompanijos pavadinimas"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
-                    Zinute *
+                    Žinutė *
                   </label>
                   <Textarea
                     id="message"
@@ -195,13 +198,13 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    placeholder="Papasakokite apie projekta..."
+                    placeholder="Papasakokite apie projektą..."
                     rows={6}
                   />
                 </div>
 
                 <Button type="submit" size="lg" className="w-full">
-                  Siusti zinute
+                  Siųsti žinutę
                 </Button>
               </form>
             </CardContent>

@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Kastytis Raulinaitis",
+    name: "Kąstytis Raulinaitis",
     role: "Pardavimų direktorius, Rekvizitai.lt", //Bendrakūrėjas
     content: "Hobbin puikiai tvarkesi su reklama, pelningas bendradarbiavimas.",
     rating: 5,
